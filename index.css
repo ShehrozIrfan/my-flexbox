@@ -1,0 +1,127 @@
+/*
+Flexbox Properties:
+1= display: flex;
+
+2= flex-direction: row/column;
+
+3= justify-content: flex-start/flex-end/ center/space-around/space-between/space-evenly
+
+4= flex property -> flex: 1; flex: 2;
+
+
+*/
+.container {
+    border: 5px solid #ffcc5c;
+}
+.c1 {
+    display: flex;
+}
+.c2 {
+    display: flex;
+    flex-direction: row;
+}
+.c3 {
+    display: flex;
+    flex-direction: column;
+}
+.c4 {
+    display: flex;
+    justify-content: flex-start;
+}
+.c5 {
+    display: flex;
+    justify-content: flex-end;
+}
+.c6 {
+    display: flex;
+    justify-content: center;
+}
+.c7 {
+    display: flex;
+    justify-content: space-around;
+}
+.c8 {
+    display: flex;
+    justify-content: space-between;
+}
+.c9 {
+    display: flex;
+    justify-content: space-evenly;
+}
+/* aligning logout to left */
+.c10 {
+    display: flex;
+}
+.logout-left {
+    margin-left: auto;
+}
+/* aligning search,logout to left */
+.search-left {
+    margin-left: auto;
+}
+/* using flex property */
+.c11 {
+    display: flex;
+}
+/* now we want that each item within a container will take the equal space but it covers the whole container */
+
+.c11 > div {
+    flex: 1;
+}
+
+/* if we want the search to contain double the space of home and logout */
+/*
+.c11 .search {
+    flex:2;
+}
+*/
+/* if we want the search to contain half of the space of home and logout */
+
+/* .home {
+    flex: 1;
+}
+.logout {
+    flex: 1;
+} */
+
+/* align-items is usually used to center an element both horizontally and vertically.
+   In this we must have to set the height to 100% */
+.c12 {
+    display: flex;
+    height: 100vh;
+    /* align-items: stretch; */
+    align-items: center;
+}
+/* aligning logout to the end */
+.c12 .logout {
+    align-self: flex-end;
+}
+.c12 .home {
+    align-self: flex-start;
+}
+.c13 {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.c14 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* align-items: flex-start;
+    justify-content: flex-start; */
+    /* align-items: flex-end;
+    justify-content: flex-end; */
+}
+
+.c15 {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; */
+}
+.c15 > div {
+    width: 300px;
+}
